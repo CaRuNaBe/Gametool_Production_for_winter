@@ -354,3 +354,6 @@ Dxlib/
 resourcefile/
 
 picojson/
+
+Log.txt/
+/.gitignore
