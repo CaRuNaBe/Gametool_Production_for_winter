@@ -1,50 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ソース ファイル">
+    <Filter Include="sorce">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="sorce\gamescript">
+      <UniqueIdentifier>{69a7f492-58bc-48a4-b291-84b589662856}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sorce\mode">
+      <UniqueIdentifier>{fdf457b1-57a3-406a-b28e-fbe41fc8a5d1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="sourcefile\mode\ModeBase.cpp">
+      <Filter>sorce\mode</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\mode\ModeGame.cpp">
+      <Filter>sorce\mode</Filter>
+    </ClCompile>
     <ClCompile Include="sourcefile\game.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="sourcefile\ModeBase.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="sourcefile\ModeGame.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="sourcefile\ModeServer.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>sorce</Filter>
     </ClCompile>
     <ClCompile Include="sourcefile\resourceserver.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>sorce</Filter>
     </ClCompile>
-    <ClCompile Include="sourcefile\scripts_string.cpp">
-      <Filter>ソース ファイル</Filter>
+    <ClCompile Include="sourcefile\winmain.cpp">
+      <Filter>sorce</Filter>
     </ClCompile>
-    <ClCompile Include="sourcefile\winmain.cpp" />
+    <ClCompile Include="sourcefile\GameScenario\scripts_string.cpp">
+      <Filter>sorce\gamescript</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\GameScenario\scripts_data.cpp">
+      <Filter>sorce\gamescript</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\GameScenario\input_manager.cpp">
+      <Filter>sorce\gamescript</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\mode\ModeServer.cpp">
+      <Filter>sorce\mode</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="sourcefile\mode\ModeBase.h">
+      <Filter>sorce\mode</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\mode\ModeGame.h">
+      <Filter>sorce\mode</Filter>
+    </ClInclude>
     <ClInclude Include="sourcefile\game.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="sourcefile\ModeBase.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="sourcefile\ModeGame.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="sourcefile\ModeServer.h">
-      <Filter>ソース ファイル</Filter>
+      <Filter>sorce</Filter>
     </ClInclude>
     <ClInclude Include="sourcefile\resourceserver.h">
-      <Filter>ソース ファイル</Filter>
+      <Filter>sorce</Filter>
     </ClInclude>
-    <ClInclude Include="sourcefile\scripts_string.h">
-      <Filter>ソース ファイル</Filter>
+    <ClInclude Include="sourcefile\GameScenario\scripts_string.h">
+      <Filter>sorce\gamescript</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\GameScenario\scripts_data.h">
+      <Filter>sorce\gamescript</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\GameScenario\input_manager.h">
+      <Filter>sorce\gamescript</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\mode\ModeServer.h">
+      <Filter>sorce\mode</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

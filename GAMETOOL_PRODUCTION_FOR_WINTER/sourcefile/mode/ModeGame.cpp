@@ -8,18 +8,22 @@
 
 #include "ModeGame.h"
 #include <DxLib.h>
-#include "Game.h"
-#include "ResourceServer.h"
+#include "../Game.h"
+#include "../ResourceServer.h"
+
 
 namespace
 {
+	//const std::string filepass = 
 }
 
-ModeGame::ModeGame ( Game& game )
-	: ModeBase ( game )
+ModeGame::ModeGame ( Game& game, int layer,std::string stagename)
+	: ModeBase ( game ,layer )
+
 {
-	ModeBase::Ini ();
+	ModeBase::Initialize ();
 	Init_modegame ();
+	//GameSclipt.Initialize(filename,stagename);
 }
 
 ModeGame::~ModeGame ()
@@ -30,25 +34,26 @@ ModeGame::~ModeGame ()
  *¥return void
  */
 void ModeGame::Init_modegame ()
-{
-	};
+{};
 /**
  *¥fn void ModeGame::Update.
  *¥brief 計算処理毎回呼ばれる
  *¥return void
  */
-void ModeGame::Update ()
+bool ModeGame::Update (  )
 {
-	ModeBase::Update ();
-
+	ModeBase::Update (  );
+	//GameSclipt.Update( _game );
+	return true;
 }
 /**
  *¥fn void ModeGame::Render.
  *¥brief 描画処理毎回呼ばれる
  *¥return void
  */
-void ModeGame::Render ()
+bool ModeGame::Draw (  )
 {
-	ModeBase::Render ();
-
+	ModeBase::Draw (  );
+	//GameSclipt.Draw( _game );
+	return true;
 }

@@ -71,20 +71,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(SolutionDir)../picojson;$(SolutionDir)../DxLib;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)../picojson;$(SolutionDir)../DxLib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)picojson;$(SolutionDir)DxLib;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)picojson;$(SolutionDir)DxLib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(SolutionDir)../picojson;$(SolutionDir)../DxLib;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)../picojson;$(SolutionDir)../DxLib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)picojson;$(SolutionDir)DxLib;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)picojson;$(SolutionDir)DxLib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)../picojson;$(SolutionDir)../DxLib;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)../picojson;$(SolutionDir)../DxLib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)picojson;$(SolutionDir)DxLib;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)picojson;$(SolutionDir)DxLib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir)../picojson;$(SolutionDir)../DxLib;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)../picojson;$(SolutionDir)../DxLib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)picojson;$(SolutionDir)DxLib;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)picojson;$(SolutionDir)DxLib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -148,20 +148,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="sourcefile\game.cpp" />
-    <ClCompile Include="sourcefile\ModeBase.cpp" />
-    <ClCompile Include="sourcefile\ModeGame.cpp" />
-    <ClCompile Include="sourcefile\ModeServer.cpp" />
+    <ClCompile Include="sourcefile\GameScenario\input_manager.cpp" />
+    <ClCompile Include="sourcefile\GameScenario\scripts_data.cpp" />
+    <ClCompile Include="sourcefile\GameScenario\scripts_string.cpp" />
+    <ClCompile Include="sourcefile\mode\ModeBase.cpp" />
+    <ClCompile Include="sourcefile\mode\ModeGame.cpp" />
+    <ClCompile Include="sourcefile\mode\ModeServer.cpp" />
     <ClCompile Include="sourcefile\resourceserver.cpp" />
-    <ClCompile Include="sourcefile\scripts_string.cpp" />
     <ClCompile Include="sourcefile\winmain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sourcefile\game.h" />
-    <ClInclude Include="sourcefile\ModeBase.h" />
-    <ClInclude Include="sourcefile\ModeGame.h" />
-    <ClInclude Include="sourcefile\ModeServer.h" />
+    <ClInclude Include="sourcefile\GameScenario\input_manager.h" />
+    <ClInclude Include="sourcefile\GameScenario\scripts_data.h" />
+    <ClInclude Include="sourcefile\GameScenario\scripts_string.h" />
+    <ClInclude Include="sourcefile\mode\ModeBase.h" />
+    <ClInclude Include="sourcefile\mode\ModeGame.h" />
+    <ClInclude Include="sourcefile\mode\ModeServer.h" />
     <ClInclude Include="sourcefile\resourceserver.h" />
-    <ClInclude Include="sourcefile\scripts_string.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
