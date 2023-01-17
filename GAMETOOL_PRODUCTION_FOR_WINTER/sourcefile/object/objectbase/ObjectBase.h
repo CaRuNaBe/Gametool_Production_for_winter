@@ -1,7 +1,7 @@
 #pragma once
 #include	"Math.h"
 #include "Dxlib.h"
-class ApplicationBase;
+class Game;
 class ModeBase;
 // ObjectBaseƒNƒ‰ƒX
 class ObjectBase
@@ -11,8 +11,8 @@ public:
 	virtual ~ObjectBase();
 
 	virtual void	Init();
-	virtual bool	Update(ApplicationBase& game,ModeBase& mode );
-	virtual bool	Draw(ApplicationBase& game,ModeBase& mode );
+	virtual bool	Update( Game& game,ModeBase& mode );
+	virtual bool	Draw( Game& game,ModeBase& mode );
 
 	virtual bool	IsDead()
 	{

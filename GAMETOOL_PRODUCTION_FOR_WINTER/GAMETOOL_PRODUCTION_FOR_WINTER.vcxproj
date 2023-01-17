@@ -147,24 +147,56 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="sourcefile\object\GameStage.cpp" />
+    <ClCompile Include="sourcefile\Math\2dCollision.cpp" />
+    <ClCompile Include="sourcefile\Math\dx_utility.cpp" />
+    <ClCompile Include="sourcefile\Math\Easing.cpp" />
+    <ClCompile Include="sourcefile\Math\math.cpp" />
+    <ClCompile Include="sourcefile\Math\matrix33.cpp" />
+    <ClCompile Include="sourcefile\Math\matrix44.cpp" />
+    <ClCompile Include="sourcefile\Math\rect.cpp" />
+    <ClCompile Include="sourcefile\Math\utility.cpp" />
+    <ClCompile Include="sourcefile\Math\vector2.cpp" />
+    <ClCompile Include="sourcefile\Math\vector4.cpp" />
+    <ClCompile Include="sourcefile\object\Player.cpp" />
     <ClCompile Include="sourcefile\game.cpp" />
     <ClCompile Include="sourcefile\GameScenario\input_manager.cpp" />
     <ClCompile Include="sourcefile\GameScenario\scripts_data.cpp" />
     <ClCompile Include="sourcefile\GameScenario\scripts_string.cpp" />
     <ClCompile Include="sourcefile\mode\ModeBase.cpp" />
-    <ClCompile Include="sourcefile\mode\ModeGame.cpp" />
+    <ClCompile Include="sourcefile\mode\ModeMainGame.cpp" />
+    <ClCompile Include="sourcefile\mode\ModeSclipt.cpp" />
     <ClCompile Include="sourcefile\mode\ModeServer.cpp" />
+    <ClCompile Include="sourcefile\object\ActorBase3D.cpp" />
+    <ClCompile Include="sourcefile\object\ObjectBase.cpp" />
+    <ClCompile Include="sourcefile\object\ObjectServer.cpp" />
     <ClCompile Include="sourcefile\resourceserver.cpp" />
     <ClCompile Include="sourcefile\winmain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="sourcefile\object\GameStage.h" />
+    <ClInclude Include="sourcefile\Math\2dCollision.h" />
+    <ClInclude Include="sourcefile\Math\dx_utility.h" />
+    <ClInclude Include="sourcefile\Math\Easing.h" />
+    <ClInclude Include="sourcefile\Math\math.h" />
+    <ClInclude Include="sourcefile\Math\matrix33.h" />
+    <ClInclude Include="sourcefile\Math\matrix44.h" />
+    <ClInclude Include="sourcefile\Math\rect.h" />
+    <ClInclude Include="sourcefile\Math\utility.h" />
+    <ClInclude Include="sourcefile\Math\vector2.h" />
+    <ClInclude Include="sourcefile\Math\vector4.h" />
+    <ClInclude Include="sourcefile\object\Player.h" />
     <ClInclude Include="sourcefile\game.h" />
     <ClInclude Include="sourcefile\GameScenario\input_manager.h" />
     <ClInclude Include="sourcefile\GameScenario\scripts_data.h" />
     <ClInclude Include="sourcefile\GameScenario\scripts_string.h" />
     <ClInclude Include="sourcefile\mode\ModeBase.h" />
-    <ClInclude Include="sourcefile\mode\ModeGame.h" />
+    <ClInclude Include="sourcefile\mode\ModeMainGame.h" />
+    <ClInclude Include="sourcefile\mode\ModeSclipt.h" />
     <ClInclude Include="sourcefile\mode\ModeServer.h" />
+    <ClInclude Include="sourcefile\object\ActorBase3D.h" />
+    <ClInclude Include="sourcefile\object\ObjectBase.h" />
+    <ClInclude Include="sourcefile\object\ObjectServer.h" />
     <ClInclude Include="sourcefile\resourceserver.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

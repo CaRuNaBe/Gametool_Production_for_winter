@@ -8,7 +8,7 @@
 #pragma once
 #include <memory>
 #include <vector>
-class ApplicationBase;
+class Game;
 class ModeBase;
 
 template<class T> class ObjectServer
@@ -52,7 +52,7 @@ public:
 		object.Dead();
 	}
 	/** 更新処理　毎フレーム呼ばれる */
-	bool	Update( ApplicationBase& game,ModeBase& mode )
+	bool	Update( Game& game,ModeBase& mode )
 	{
 		_updating = true;//処理開始
 		for ( auto&& object : _vObjects )
@@ -69,7 +69,7 @@ public:
 		return true;
 	}
 	/** 描画処理　毎フレーム呼ばれる */
-	bool	Draw( ApplicationBase& game,ModeBase& mode )
+	bool	Draw( Game& game,ModeBase& mode )
 	{
 		for ( auto&& object : _vObjects )
 		{

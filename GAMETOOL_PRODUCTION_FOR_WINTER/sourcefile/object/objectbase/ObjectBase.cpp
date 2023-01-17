@@ -21,12 +21,12 @@ void ObjectBase::Init()
 	_dead = false;
 }
 
-bool ObjectBase::Update(ApplicationBase& game,ModeBase& mode )
+bool ObjectBase::Update( Game& game,ModeBase& mode )
 {
 	return true;
 }
 
-bool ObjectBase::Draw(ApplicationBase& game,ModeBase& mode )
+bool ObjectBase::Draw( Game& game,ModeBase& mode )
 {
 	return true;
 }

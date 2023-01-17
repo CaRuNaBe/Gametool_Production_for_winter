@@ -17,16 +17,16 @@ public:
 	void Draw();	// •`‰æ
 
 
-	InputManager& GetInput()
+	InputManager& Getinput()
 	{
 		return _input;
 	}
-	/*
+	
 	ModeServer& GetModeServer()
 	{
 		return _modeServer;
 	}
-	*/
+	
 private:
 	InputManager _input;
 	ModeServer _modeServer;

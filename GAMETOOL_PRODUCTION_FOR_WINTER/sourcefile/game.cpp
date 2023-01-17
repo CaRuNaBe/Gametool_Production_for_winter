@@ -1,10 +1,10 @@
 #include "game.h"
-#include"mode/ModeGame.h"
+#include"mode/ModeMainGame.h"
 // コンストラクタ
 Game::Game()
 	: _modeServer( *this )
 {
-	auto game = std::make_shared<ModeGame>( *this,1,"game" );
+	auto game = std::make_shared<ModeMainGame>( *this,1,"game" );
 	_modeServer.Add( game );
 }
 

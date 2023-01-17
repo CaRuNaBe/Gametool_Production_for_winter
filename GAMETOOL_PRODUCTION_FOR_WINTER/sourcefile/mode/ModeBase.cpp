@@ -4,13 +4,16 @@
 
 #include "ModeBase.h"
 
-ModeBase::ModeBase(Game& game, int layer)
-	: _game(game)
-	,_dead(false)
-	,_isModeSkip(false)
-	,_isDrawSkip(false)
-	,_layer(layer)
-{}
+ModeBase::ModeBase( Game& game,int layer )
+	: _game( game )
+	,_dead( false )
+	,_isModeSkip( false )
+	,_isDrawSkip( false )
+	,_layer( layer )
+{
+	Initialize();
+
+}
 
 ModeBase::~ModeBase()
 {}

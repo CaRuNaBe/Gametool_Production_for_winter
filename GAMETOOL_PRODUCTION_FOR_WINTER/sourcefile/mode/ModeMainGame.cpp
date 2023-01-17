@@ -6,43 +6,50 @@
  * \date   September 2022
  *********************************************************************/
 
-#include "ModeGame.h"
+#include "ModeMainGame.h"
 #include <DxLib.h>
 #include "../Game.h"
 #include "../ResourceServer.h"
-
-
+#include"../object/Player.h"
+#include"../object/GameStage.h"
 namespace
 {
 	//const std::string filepass = 
 }
 
-ModeGame::ModeGame ( Game& game, int layer,std::string stagename)
-	: ModeBase ( game ,layer )
+ModeMainGame::ModeMainGame( Game& game,int layer,std::string stagename )
+	: ModeBase( game,layer )
 
 {
-	ModeBase::Initialize ();
-	Init_modegame ();
+	Init();
+	auto player = std::make_shared<Player>();
+	_objectServer.Add( player );
+	auto stage = std::make_shared<GameStage>();
+	_objectServer.Add( stage );
+
 	//GameSclipt.Initialize(filename,stagename);
 }
 
-ModeGame::~ModeGame ()
+ModeMainGame::~ModeMainGame()
 {}
 /**
  *¥fn void ModeGame::Init_modegame.
  *¥brief
  *¥return void
  */
-void ModeGame::Init_modegame ()
-{};
+void ModeMainGame::Init()
+{
+	ModeBase::Initialize();
+};
 /**
  *¥fn void ModeGame::Update.
  *¥brief 計算処理毎回呼ばれる
  *¥return void
  */
-bool ModeGame::Update (  )
+bool ModeMainGame::Update()
 {
-	ModeBase::Update (  );
+	ModeBase::Update();
+	_objectServer.Update( _game,*this );
 	//GameSclipt.Update( _game );
 	return true;
 }
@@ -51,9 +58,10 @@ bool ModeGame::Update (  )
  *¥brief 描画処理毎回呼ばれる
  *¥return void
  */
-bool ModeGame::Draw (  )
+bool ModeMainGame::Draw()
 {
-	ModeBase::Draw (  );
+	ModeBase::Draw();
+	_objectServer.Draw( _game,*this );
 	//GameSclipt.Draw( _game );
 	return true;
 }

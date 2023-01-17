@@ -58,7 +58,7 @@ private:
 	void Parsing();
 
 	void UpdateMessage();
-	bool CalculateMessageArea( const std::string& message,Rect& area,int& right_goal );
+	//bool CalculateMessageArea( const std::string& message,Rect& area,int& right_goal );
 
 	void TimeWait();
 	void ClickWait();

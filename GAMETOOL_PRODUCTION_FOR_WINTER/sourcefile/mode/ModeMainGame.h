@@ -7,16 +7,17 @@
 
 class Game;
 
-class ModeGame :public ModeBase
+class ModeMainGame:public ModeBase
 {
 public:
-	ModeGame ( Game& game ,int layer,std::string stagename);
-	virtual ~ModeGame ();
-	void Init_modegame ();
+	ModeMainGame( Game& game ,int layer,std::string stagename);
+	virtual ~ModeMainGame();
+	void Init ();
 
 	virtual bool Update ( ); // çXêV
 
 	virtual bool Draw ( );	// ï`âÊ
 protected:
 	//GameScriptEngine GameSclipt;
+	ObjectServer<ActorBase3D> _objectServer;
 };

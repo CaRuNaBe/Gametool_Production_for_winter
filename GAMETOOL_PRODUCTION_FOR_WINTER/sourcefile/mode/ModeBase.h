@@ -1,8 +1,7 @@
 #pragma once
 #include	"../Object/ObjectServer.h"
-//#include "../game.h"
+#include"../object/ActorBase3D.h"
 class Game;
-
 class ModeBase
 {
 public:
@@ -38,7 +37,7 @@ public:
 	
 protected:
 	Game& _game;
-	
+
 	bool	_dead;
 	bool _isModeSkip;
 	bool _isDrawSkip;
