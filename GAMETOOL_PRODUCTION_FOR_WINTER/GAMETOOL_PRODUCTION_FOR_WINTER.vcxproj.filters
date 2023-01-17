@@ -17,6 +17,9 @@
     <Filter Include="sorce\Math">
       <UniqueIdentifier>{00ee9a9d-c97e-4cc1-b3b6-12762081a139}</UniqueIdentifier>
     </Filter>
+    <Filter Include="sorce\object\objectbase">
+      <UniqueIdentifier>{e9dacae8-e479-4a46-852c-f54c3b051c2e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sourcefile\mode\ModeBase.cpp">
@@ -45,15 +48,6 @@
     </ClCompile>
     <ClCompile Include="sourcefile\mode\ModeServer.cpp">
       <Filter>sorce\mode</Filter>
-    </ClCompile>
-    <ClCompile Include="sourcefile\object\ObjectBase.cpp">
-      <Filter>sorce\object</Filter>
-    </ClCompile>
-    <ClCompile Include="sourcefile\object\ObjectServer.cpp">
-      <Filter>sorce\object</Filter>
-    </ClCompile>
-    <ClCompile Include="sourcefile\object\ActorBase3D.cpp">
-      <Filter>sorce\object</Filter>
     </ClCompile>
     <ClCompile Include="sourcefile\mode\ModeSclipt.cpp">
       <Filter>sorce\gamescript</Filter>
@@ -94,6 +88,42 @@
     <ClCompile Include="sourcefile\object\GameStage.cpp">
       <Filter>sorce\object</Filter>
     </ClCompile>
+    <ClCompile Include="sourcefile\object\SupplyEria.cpp">
+      <Filter>sorce\object</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\object\SkySphere.cpp">
+      <Filter>sorce\object</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\object\StageObject.cpp">
+      <Filter>sorce\object</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\object\NoEntryEria.cpp">
+      <Filter>sorce\object</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\object\EnemySpawnEria.cpp">
+      <Filter>sorce\object</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\object\CommunicationAria.cpp">
+      <Filter>sorce\object</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\object\ClearObject.cpp">
+      <Filter>sorce\object</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\object\CannonArea.cpp">
+      <Filter>sorce\object</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\object\Cannon.cpp">
+      <Filter>sorce\object</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\object\objectbase\ActorBase3D.cpp">
+      <Filter>sorce\object\objectbase</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\object\objectbase\ObjectBase.cpp">
+      <Filter>sorce\object\objectbase</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefile\object\objectbase\ObjectServer.cpp">
+      <Filter>sorce\object\objectbase</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sourcefile\mode\ModeBase.h">
@@ -119,15 +149,6 @@
     </ClInclude>
     <ClInclude Include="sourcefile\mode\ModeServer.h">
       <Filter>sorce\mode</Filter>
-    </ClInclude>
-    <ClInclude Include="sourcefile\object\ActorBase3D.h">
-      <Filter>sorce\object</Filter>
-    </ClInclude>
-    <ClInclude Include="sourcefile\object\ObjectBase.h">
-      <Filter>sorce\object</Filter>
-    </ClInclude>
-    <ClInclude Include="sourcefile\object\ObjectServer.h">
-      <Filter>sorce\object</Filter>
     </ClInclude>
     <ClInclude Include="sourcefile\mode\ModeSclipt.h">
       <Filter>sorce\gamescript</Filter>
@@ -167,6 +188,42 @@
     </ClInclude>
     <ClInclude Include="sourcefile\object\GameStage.h">
       <Filter>sorce\object</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\object\SupplyEria.h">
+      <Filter>sorce\object</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\object\Cannon.h">
+      <Filter>sorce\object</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\object\CannonArea.h">
+      <Filter>sorce\object</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\object\ClearObject.h">
+      <Filter>sorce\object</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\object\CommunicationAria.h">
+      <Filter>sorce\object</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\object\EnemySpawnEria.h">
+      <Filter>sorce\object</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\object\NoEntryEria.h">
+      <Filter>sorce\object</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\object\SkySphere.h">
+      <Filter>sorce\object</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\object\StageObject.h">
+      <Filter>sorce\object</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\object\objectbase\ActorBase3D.h">
+      <Filter>sorce\object\objectbase</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\object\objectbase\ObjectBase.h">
+      <Filter>sorce\object\objectbase</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcefile\object\objectbase\ObjectServer.h">
+      <Filter>sorce\object\objectbase</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

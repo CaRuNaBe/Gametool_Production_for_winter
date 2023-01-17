@@ -22,7 +22,7 @@ public:
 		return _input;
 	}
 	
-	ModeServer& GetModeServer()
+	virtual ModeServer& GetModeServer()
 	{
 		return _modeServer;
 	}

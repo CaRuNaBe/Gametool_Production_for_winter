@@ -5,7 +5,7 @@
 //!
 #pragma once
 
-#include "amg_rect.h"
+
 #include <tchar.h>
 #include <vector>
 #include <string>
@@ -58,7 +58,7 @@ private:
 	void Parsing();
 
 	void UpdateMessage();
-	//bool CalculateMessageArea( const std::string& message,Rect& area,int& right_goal );
+	bool CalculateMessageArea( const std::string& message,Rect& area,int& right_goal );
 
 	void TimeWait();
 	void ClickWait();

@@ -12,6 +12,8 @@
 #include "../ResourceServer.h"
 #include"../object/Player.h"
 #include"../object/GameStage.h"
+#include"../object/SkySphere.h"
+#include "../object/SupplyEria.h"
 namespace
 {
 	//const std::string filepass = 
@@ -26,7 +28,10 @@ ModeMainGame::ModeMainGame( Game& game,int layer,std::string stagename )
 	_objectServer.Add( player );
 	auto stage = std::make_shared<GameStage>();
 	_objectServer.Add( stage );
-
+	auto skysphere = std::make_shared<SkySphere>();
+	_objectServer.Add( skysphere );
+	auto supplyeria = std::make_shared<SupplyEria>();
+	_objectServer.Add( supplyeria );
 	//GameSclipt.Initialize(filename,stagename);
 }
 

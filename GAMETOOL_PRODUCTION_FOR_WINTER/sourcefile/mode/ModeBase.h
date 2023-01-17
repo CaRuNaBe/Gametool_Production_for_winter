@@ -1,6 +1,6 @@
 #pragma once
-#include	"../Object/ObjectServer.h"
-#include"../object/ActorBase3D.h"
+#include	"../Object/objectbase/ObjectServer.h"
+#include"../object/objectbase/ActorBase3D.h"
 class Game;
 class ModeBase
 {

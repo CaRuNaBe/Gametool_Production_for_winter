@@ -1,5 +1,5 @@
 #pragma once
-#include "ActorBase3D.h"
+#include "objectbase/ActorBase3D.h"
 class GameStage:public ActorBase3D
 {
 	using base = ActorBase3D;

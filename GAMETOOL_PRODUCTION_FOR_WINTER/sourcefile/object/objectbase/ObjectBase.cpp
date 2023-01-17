@@ -4,7 +4,7 @@
 
 #include "DxLib.h"
 #include "ObjectBase.h"
-#include "../Mode/ModeBase.h"
+#include "../../mode/ModeBase.h"
 ObjectBase::ObjectBase()
 	:isUpdateSkip(false)
 	,isDrawSkip(false)

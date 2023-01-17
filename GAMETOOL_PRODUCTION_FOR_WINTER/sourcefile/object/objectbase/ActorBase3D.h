@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../Math/math.h"
+#include "../../Math/math.h"
 #include "ObjectBase.h"
 using namespace math;
 class ActorBase3D : public ObjectBase {
@@ -8,7 +8,6 @@ class ActorBase3D : public ObjectBase {
 public:
 	ActorBase3D();
 	virtual ~ActorBase3D();
-
 
 	virtual void Init();
 	virtual bool Update( Game& game, ModeBase& mode);
